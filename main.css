@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+body {
+  font-family: "Italianno", cursive;
+  background: url('assets/seasons.jpg') no-repeat center center fixed;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+head {
+  width: 90%;
+}
+
+.container {
+  background-color: hsla(0, 0%, 100%, .4);
+  border-radius: 10px;
+  box-shadow: hsla(0, 0%, 0%, .9) 10px 10px 80px;
+  width: 520px;
+  max-width: calc(100vw - 20vw);,
+  height: 60vh;
+}
+
+.head, .about{
+  margin-bottom: 3%;
+}
+
+.fa-map-marker {
+  margin-bottom: 3%;
+}
+
+.about {
+  line-height: 25px;
+  font-size: 35px;
+}
+
+.head, .links {
+  line-height: 30px;
+  text-align: center;
+}
+
+.head, .content {
+  margin: 0 auto;
+}
+
+.content {
+  border-top: 1px solid hsla(0, 0%, 30%, .8);
+  padding: 5% 10%;
+}
+
+
+img {
+  padding: 3px;
+  background-color: lightblue;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  transition: all 0.5s ease-in-out;
+  filter: grayscale(0%);
+}
+
+img:hover {
+  transform: scale(1.1);
+  filter: grayscale(25%);
+}
+
+.profile-image {
+  margin-top: +8px;
+}
+
+h1 {
+  font-size: 50px;
+  color: burlywood;
+  transition: all 0.5s ease-in-out;  
+}
+
+h1:hover {
+  transform: scale(1.1);
+}
+
+h2, p {
+  font-size: 30px;
+}
+
+p {
+  text-align: justify;
+}
+span {
+  font-size: 25px;
+}
+
+.about::first-letter {
+  font-size: 45px;
+}
+
+a {
+  height: 50px;
+  color: lightblue;
+  transition: all 0.5s ease-in-out;
+}
+
+a:hover {
+  color: midnightblue;  
+}
+
+.scroller {
+  height: 325px;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+
+.scroller section {
+  scroll-snap-align: start;
+}
